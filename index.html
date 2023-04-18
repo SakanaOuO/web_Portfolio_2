@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .dd {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <ul id="c1">
+        <li>A</li>
+        <li>B</li>
+        <li>C</li>
+    </ul>
+
+    <ul>
+        <li>A</li>
+        <li>B</li>
+        <li>C</li>
+    </ul>
+
+    <ul>
+        <button id="btn1">btn-1</button>
+    </ul>
+<script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+<script type="text/javascript">
+    $(function (){
+        console.log("00");
+        $("#c1 > li").addClass("dd");
+        $("#btn1").bind("click",btnonclick)
+    });
+
+    $(function btnonclick(){
+        console.log("..");
+    })
+
+    $(function (){
+
+    });
+</script>
+</body>
+</html>
